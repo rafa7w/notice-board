@@ -10,14 +10,12 @@
         <div class="container">
                 <h3>New Post</h3>
                 <div>
-                        <input id="title" type="text" placeholder="Title">
-                        <input id="description" type="text" placeholder="Description">
+                        <input id="title" type="text" placeholder="Title" required autofocus>
+                        <input id="description" type="text" placeholder="Description" required>
                         <button onclick="newPost()">Save</button>
                 </div>
                 <h2 class="mt-4">Board</h2>
-                <div id="posts">
-                        
-                </div>
+                <div id="posts"></div>
         </div>
         <script src="./scripts/script.js"></script>
 </body>

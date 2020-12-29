@@ -28,4 +28,22 @@ function updatePosts(){
 
 function newPost(){
 
+        let title = document.getElementById("title").value;
+        let description = document.getElementById("description").value;
+
+        let post = { title, description };
+
+        const options = {
+                method: "POST",
+                headers: new Headers({
+                        "content-type": "application/json",
+                }),
+                body: JSON.stringify(post)
+        };
+
+        fetch("http://localhost:3000/api/new", options).then(res => {
+                updatePosts();
+                document.getElementById("title").value = "";
+                document.getElementById("description").value = "";
+        })
 }
