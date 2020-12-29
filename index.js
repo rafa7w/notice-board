@@ -5,6 +5,7 @@ const apiRoute = require("./routes/api");
 
 const app = express();
 
+app.use("/", express.static(path.join(__dirname, "public")));
 app.use("/api", apiRoute);
 
 app.listen(3000, () => {

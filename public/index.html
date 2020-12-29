@@ -8,11 +8,11 @@
 </head>
 <body>
         <div class="container">
-                <h3>New Post</h3>
+                <h3 class="mt-4 ">New Post</h3>
                 <div>
-                        <input id="title" type="text" placeholder="Title" required autofocus>
-                        <input id="description" type="text" placeholder="Description" required>
-                        <button onclick="newPost()">Save</button>
+                        <input class="form-control w-25 mb-3" id="title" type="text" placeholder="Title" autofocus>
+                        <input class="form-control mb-3" id="description" type="text" placeholder="Description">
+                        <button class="btn btn-success w-25" onclick="newPost()">Save</button>
                 </div>
                 <h2 class="mt-4">Board</h2>
                 <div id="posts"></div>
